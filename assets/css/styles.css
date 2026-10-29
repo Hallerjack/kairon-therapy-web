@@ -747,3 +747,124 @@ footer {
 @media (max-width: 768px) {
     .impact-grid { grid-template-columns: 1fr; gap: 30px; }
 }
+
+/* =========================================
+   ESTILOS PÁGINA IDENTIDAD CORPORATIVA
+========================================= */
+
+/* Hero Especial Centrado */
+.hero-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 70vh;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.hero-center h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    max-width: 900px;
+}
+
+.hero-center p {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Modificador Alineación superior para Split Layouts */
+.align-start {
+    align-items: flex-start;
+}
+
+/* Tarjetas de problemas en formato compacto (Visión) */
+.problem-card.compact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.problem-card.compact h4 {
+    margin-top: 10px;
+    font-size: 1.05rem;
+    color: var(--bg-dark);
+}
+
+.problem-card.compact .problem-icon {
+    margin-bottom: 0;
+}
+
+/* Fuerza a una tarjeta a ocupar 2 columnas en grid (útil para números impares) */
+.full-col {
+    grid-column: 1 / -1;
+}
+
+/* Grid especial de 3 columnas para los 5 Valores */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Ajustes interiores de la tarjeta de Valor */
+.value-card {
+    padding: 40px 30px;
+    border-top: 4px solid var(--text-blue);
+}
+
+.value-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.value-card p {
+    font-size: 0.95rem;
+    margin: 0;
+    opacity: 0.85;
+}
+
+/* Adaptabilidad Responsiva para Página Identidad */
+@media (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* El 5to valor ocupa todo el ancho inferior en tablets para no romper diseño */
+    .value-card:nth-child(5) {
+        grid-column: 1 / -1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-center {
+        min-height: 60vh;
+    }
+    
+    .hero-center h1 {
+        font-size: 2.3rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-card:nth-child(5) {
+        grid-column: auto;
+        max-width: 100%;
+    }
+    
+    .problem-card.compact.full-col {
+        grid-column: auto;
+    }
+}

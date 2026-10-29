@@ -12,7 +12,8 @@
             <li><a href="index.php#servicios">Pilares</a></li>
             <li><a href="index.php#ecosistema">Ecosistema</a></li>
             <li><a href="identidad.php">Identidad</a></li>
-            <li><a href="index.php#contacto" class="btn-outline">Cotiza</a></li>
+            <li><a href="index.php#contacto" class="btn-outline-2">Cotiza</a></li>
+            <li><a href="https://kairontherapy.com/intranet" class="btn-outline">Acceso interno</a></li>
         </ul>
     </div>
 </nav>

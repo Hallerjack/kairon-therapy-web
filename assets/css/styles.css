@@ -130,13 +130,25 @@ body {
 }
 
 .btn-outline {
+    border: 1px solid var(--text-green);
+    color: var(--text-green) !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.btn-outline:hover {
+    background-color: var(--text-green);
+    color: var(--bg-dark) !important;
+}
+
+.btn-outline-2 {
     border: 1px solid var(--text-cream);
     color: var(--text-cream) !important;
     padding: 8px 20px;
     border-radius: 4px;
 }
 
-.btn-outline:hover {
+.btn-outline-2:hover {
     background-color: var(--text-cream);
     color: var(--bg-dark) !important;
 }

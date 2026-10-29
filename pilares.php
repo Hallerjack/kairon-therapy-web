@@ -11,26 +11,7 @@
 </head>
 <body>
 
-    <!-- Navegación -->
-    <nav id="navbar" style="background-color: var(--bg-dark);">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html" style="text-decoration: none;">
-                    <img class="logo-k" src="./assets/img/logos/Kairon-logo_horizontal_1.png" alt="logo kairon therapy">
-                </a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html#inicio">Inicio</a></li>
-                <li><a href="index.html#el-problema">El Problema</a></li>
-                <li><a href="index.html#servicios">Pilares</a></li>
-                <li><a href="index.html#ecosistema">Ecosistema</a></li>
-                <li><a href="index.html#contacto" class="btn-outline">Cotiza</a></li>
-            </ul>
-        </div>
-    </nav>
+    <?php include __DIR__ . '/nav.php'; ?>
 
     <!-- Espaciador para el menú fijo -->
     <div style="height: 80px; background: var(--bg-dark);"></div>
@@ -295,14 +276,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <div class="logo justify-center mb-4">
-                <img class="iso" src="./assets/img/logos/Kairon_iso.png" alt="Iso Kairon Therapy">
-            </div>
-            <p>&copy; 2026 KAIRON SpA. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <?php include __DIR__ . '/footer.php'; ?>
  
     <script src="assets/js/script.js"></script>
 </body>

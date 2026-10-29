@@ -14,23 +14,7 @@
 <body>
 
     <!-- Navegación -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img class="logo-k" src="./assets/img/logos/Kairon-logo_horizontal_1.png" alt="logo kairon therapy">
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#el-problema">El Problema</a></li>
-                <li><a href="#servicios">Pilares</a></li>
-                <li><a href="#ecosistema">Ecosistema</a></li>
-                <li><a href="#contacto" class="btn-outline">Cotiza</a></li>
-            </ul>
-        </div>
-    </nav>
+    <?php include __DIR__ . '/nav.php'; ?>
 
     <!-- Hero Section con Imagen de Fondo -->
     <section id="inicio" class="hero section-dark has-bg-img" style="background-image: url('https://static.vecteezy.com/system/resources/previews/069/178/831/non_2x/network-nodes-connections-digital-grid-dark-background-tech-concept-free-photo.jpg');">
@@ -211,14 +195,8 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <footer>
-        <div class="container text-center">
-            <div class="logo justify-center mb-4">
-                <img class="iso" src="./assets/img/logos/Kairon_iso.png" alt="Iso Kairon Therapy">
-            </div>
-            <p>&copy; 2026 KAIRON SpA. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <?php include __DIR__ . '/footer.php'; ?>
 
     <script src="assets/js/script.js"></script>
 </body>
